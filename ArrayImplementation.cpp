@@ -1,4 +1,4 @@
-#define MAX 100
+#define MAX 10
 #include <iostream>
 using namespace std;
 
@@ -252,6 +252,4 @@ int main(){
         }
         op--;
     }
-}
-
-// array implementation feature1 
+} 
