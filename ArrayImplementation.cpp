@@ -1,4 +1,4 @@
-#define MAX 10
+#define MAX 50
 #include <iostream>
 using namespace std;
 
