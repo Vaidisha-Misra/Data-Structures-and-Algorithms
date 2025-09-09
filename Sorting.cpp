@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 void Print(int arr[],int size){
     for(int i=0;i<size;i++){
@@ -35,10 +36,47 @@ void SelectionSort(int arr[],int size){
 
     }
 }
+
+void Merge(int arr[],int start,int mid,int end){
+    vector <int> v;
+    int p=start;
+    int q=mid+1;
+    while(p<=mid && q<=end){
+        if(arr[p]<=arr[q]){
+            v.push_back(arr[p]);
+            p++;
+        }
+        else{
+            v.push_back(arr[q]);
+            q++;
+        }
+    }
+    while(p<=mid){
+        v.push_back(arr[p]);
+        p++;
+    }
+    while(q<=end){
+        v.push_back(arr[q]);
+        q++;
+    }
+    for(int i=0;i<v.size();i++){
+        arr[start+i]=v[i];
+    }
+}
+
+void MergeSort(int arr[],int start,int end){
+    if(start>=end) return;
+    int mid=(start+end)/2;
+    MergeSort(arr,start,mid);
+    MergeSort(arr,mid+1,end);
+    Merge(arr,start,mid,end);
+}
+
+
 int main(){
     int arr[]={2,7,1,3,90,10,0};
     Print(arr,7);
-    SelectionSort(arr,7);
+    MergeSort(arr,0,6);
     Print(arr,7);
     
 }
