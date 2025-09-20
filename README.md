@@ -5,4 +5,5 @@
   <li>Sorting</li>
   <li>Linked List</li>
   <li>Stacks</li>
+  <li>Queues</li>
 </ul>
