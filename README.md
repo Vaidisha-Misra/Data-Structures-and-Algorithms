@@ -3,4 +3,5 @@
 <ul>
   <li>Arrays</li>
   <li>Sorting</li>
+  <li>Linked List</li>
 </ul>
