@@ -6,4 +6,5 @@
   <li>Linked List</li>
   <li>Stacks</li>
   <li>Queues</li>
+  <li>Recursion</li>
 </ul>
