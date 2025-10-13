@@ -15,6 +15,11 @@ class myStack {
         top = -1;
     }
 
+
+    ~myStack(){
+        delete[] arr;
+    }
+    
     void push(int x) {
         if (top >= capacity - 1) {
             cout << "Stack Overflow\n";
