@@ -60,8 +60,13 @@ class LinkedList{
                 return;
             }
             Node *prev=head;
-            for(int i=0;i<pos-2;i++){
+            for(int i=0;i<pos-2 && prev!=NULL;i++){
                 prev=prev->next;
+            }
+            if(prev==NULL) {
+                cout<<"Index out of bounds."<<endl;
+                delete temp;
+                return;
             }
             temp->next=prev->next;
             prev->next=temp;
