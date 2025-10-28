@@ -7,4 +7,5 @@
   <li>Stacks</li>
   <li>Queues</li>
   <li>Recursion</li>
+  <li>Trees</li>
 </ul>
