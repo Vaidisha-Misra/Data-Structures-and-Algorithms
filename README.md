@@ -8,4 +8,6 @@
   <li>Queues</li>
   <li>Recursion</li>
   <li>Trees</li>
+  <li>Graphs</li>
+  <li>Topological Sort</li>
 </ul>
